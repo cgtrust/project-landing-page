@@ -1,0 +1,50 @@
+body {
+    color: #fff;
+    background-color: #111111;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+h1 {
+    color: #111111;
+    font-size: 2.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: .5em 0;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+a, a:visited {
+    color: #fff;
+}
+
+a:hover, a:active, a:focus {
+    color: #111111;
+    background-color: #fff;
+}
+
+a:focus {
+    outline: 1px dotted #fff;
+}
+
+p {
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
