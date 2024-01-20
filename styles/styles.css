@@ -1,21 +1,22 @@
 body {
-    color: #fff;
-    background-color: #111111;
+    color: #d8d8cf;
+    background-color: #191c19;
     text-align: center;
     margin: 0 auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
     line-height: 1.5;
 }
 
 header {
-    background-color: #fff;
-    padding: 2rem;
+    background-color: #e6e2c7;
+    padding: 1rem;
 }
 
 h1 {
-    color: #111111;
+    color: #e6e2c7;
     font-size: 2.5rem;
+    border-bottom: 2px solid rgb(46, 64, 221);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,20 +32,53 @@ a {
 }
 
 a, a:visited {
-    color: #fff;
+    color: #e6e2c7;
 }
 
 a:hover, a:active, a:focus {
-    color: #111111;
-    background-color: #fff;
+    color: #191c19;
+    background-color: #e6e2c7;
 }
 
 a:focus {
-    outline: 1px dotted #fff;
+    outline: 1px dotted #e6e2c7;
 }
 
+li {
+    list-style: none;
+    margin-left: 0rem;
+}
+
+/* Sidebar Navigation Menu */
+
+@media (min-width: 43.75em) {
+    .nav {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    background-color: #e6e2c7;
+    max-width: 15%;
+    float: left;
+    }
+
+    .nav a, .nav a:visited {
+    color: #191c19;
+    }
+
+    .nav a:hover, .nav a:active, .nav a:focus {
+    background-color: #191c19;
+    color: #e6e2c7;
+    }
+
+    .nav a:focus {
+    outline: 1px dotted #191c19;
+    }
+}
+
+/* Main Content */
 p {
     max-width: 60%;
     text-align: center;
+    padding: 2rem;
     margin: 0 auto;
 }
