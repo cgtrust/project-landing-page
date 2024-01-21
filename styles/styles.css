@@ -67,7 +67,7 @@ header {
     scroll-behavior: smooth;
 }
 
-.logo img {
+.logo img, .menu-toggle img {
     max-width: 6.25rem;
 }
 
@@ -75,15 +75,32 @@ header {
     .menu-toggle {
         display: none;
     }
-
-    .logo img {
-        size: 100%;
-    }
 }
 
 /* Navigation */
 .nav {
+    display: block;
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+/* Mobile */
+.nav {
     display: none;
+}
+
+.menu-toggle {
+    margin: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav {
+        display: table;
+    }
 }
 
 /* Main Content */
