@@ -1,7 +1,7 @@
+/* Main Body Styles */
 body {
     color: #d8d8cf;
     background-color: #191c19;
-    text-align: center;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -15,36 +15,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.75rem;
 }
 
-/* Header */
-header {
-    background-color: #e6e2c7;
-    color: #191c19;
-    padding: .5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    transform: translateY(-50%);
-    box-shadow: 0px 0px 3px 3px #9d8963;
-    scroll-padding-top: 3rem;
-    scroll-behavior: smooth;
-}
-
-header img {
-    max-width: 5rem;
-}
-
-h1 {
-    color: #e6e2c7;
-    font-size: 2.5rem;
-    border-bottom: 2px solid #9d8963;
-    max-width: 60%;
-    padding: 5rem 0rem;
-    margin: 2rem auto;
+.site-wrap {
+    text-align: center;
 }
 
 /* Links */
@@ -71,69 +43,58 @@ a:focus {
 
 li {
     list-style: none;
-    margin-left: 0rem;
 }
 
-/* For large screens */
-.site-wrap {
-    max-width: 120rem;
-    margin: 0 auto;
+/* Header */
+header, footer {
+    background-color: #e6e2c7;
+    color: #191c19;
 }
 
-/* Menu button for mobile */
-.menu-toggle {
-    background: none;
-    padding: 0 1rem;
-    border: none;
+header {
+    padding: .5rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    box-shadow: 0px 0px 3px 3px #9d8963;
+    scroll-padding-top: 3rem;
+    scroll-behavior: smooth;
 }
 
-.nav {
-    display: none;
+.logo img {
+    max-width: 6.25rem;
 }
 
-/* Sidebar Navigation Menu */
-@media (min-width: 43.75em) {
+@media (min-width: 40rem) {
     .menu-toggle {
         display: none;
     }
 
-    .nav {
-        display: block;
-        margin-top: 1.5rem;
-        float: right;
-        margin-right: .25rem;
-    }
-
-    .nav a {
-        color: #191c19;
-        padding: .625rem 1.25rem;
-        background-color: #e6e2c7;
-        transition-property: color, background-color;
-        transition-duration: 2s;
-    }
-
-    .nav li {
-        margin: 0;
-        padding: 0;
-    }
-
-    .nav a, .nav a:visited {
-    color: #191c19;
-    }
-
-    .nav a:hover, .nav a:active, .nav a:focus {
-    background-color: #191c19;
-    color: #e6e2c7;
-    }
-
-    .nav a:focus {
-    outline: 1px dotted #191c19;
+    .logo img {
+        size: 100%;
     }
 }
 
+/* Navigation */
+.nav {
+    display: none;
+}
+
 /* Main Content */
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid #9d8963;
+    max-width: 60%;
+    padding: 5rem 0rem;
+    margin: 2rem auto;
+}
+
 p {
     max-width: 60%;
     text-align: center;
@@ -141,7 +102,7 @@ p {
     margin: 0 auto;
 }
 
-/* Projects */
+/* Portfolio */
 h2 {
     color: #191c19;
     background-color: #e6e2c7;
@@ -149,11 +110,18 @@ h2 {
     margin: 1.5rem;
 }
 
-.projects-wrap, .wordpress {
+.projects-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 3rem;
+    gap: 2rem;
+    margin: 3rem auto;
+    max-width: 60%;
+}
+
+.projects-wrap a {
+    margin: 0 auto;
+    justify-content: center;
 }
 
 article {
@@ -161,56 +129,14 @@ article {
     margin: 1rem;
 }
 
-@media (min-width: 43.75rem) {
-    .wordpress h2 {
-        margin: auto;
-    }
-}
-
 /* Footer */
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #191c19;
-    background-color: #e6e2c7;
-    padding: 0;
-}
-
 .contact {
     display: flex;
     flex-direction: row;
-    padding: 0;
+    margin: 0 auto;
 }
 
-.contact a:hover, .contact a:active, .contact a:focus, .contact a:focus {
-    outline: 1px dotted #191c19;
-    background: none;
-}
-
-@media (min-width: 43.75em){
-
-    footer, .contact {
-        color: #191c19;
-        background-color: #e6e2c7;
-        padding: 0;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: .1rem;
-        align-items: baseline;
-        margin: 0;
-    }
-    
-    .contact {
-        position: absolute;
-        float: left;
-    }
-}
-
-.contact a:hover, .contact a:active, .contact a:focus, .contact a:focus {
-    outline: 1px dotted #191c19;
-    background: none;
+.footer {
+    align-items: center;
+    margin: 0 auto;
 }

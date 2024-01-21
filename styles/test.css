@@ -1,0 +1,203 @@
+body {
+    color: #d8d8cf;
+    background-color: #191c19;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: .5em 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.75rem;
+}
+
+.site-wrap {
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #e6e2c7;
+    color: #191c19;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transform: translateY(-50%);
+    box-shadow: 0px 0px 3px 3px #9d8963;
+    scroll-padding-top: 3rem;
+    scroll-behavior: smooth;
+}
+
+header img {
+    max-width: 5rem;
+}
+
+h1 {
+    color: #e6e2c7;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #9d8963;
+    max-width: 60%;
+    padding: 5rem 0rem;
+    margin: 2rem auto;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    display: flex;
+    gap: 1.25rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+a, a:visited {
+    color: #e6e2c7;
+}
+
+a:hover, a:active, a:focus {
+    color: #191c19;
+    background-color: #e6e2c7;
+}
+
+a:focus {
+    outline: 1px dotted #e6e2c7;
+}
+
+li {
+    list-style: none;
+    margin-left: 0rem;
+}
+
+/* For large screens */
+.site-wrap {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Menu button for mobile */
+.menu-toggle {
+    background: none;
+    padding: 0 1rem;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: none;
+}
+
+/* Fullscreen Navigation Menu */
+@media (min-width: 43.75em) {
+    .menu-toggle {
+        display: none;
+    }
+
+
+    nav ul {
+        display: block;
+    }
+
+    .nav {
+        margin-top: 1.5rem;
+        margin-right: .25rem;
+    }
+
+    .nav a {
+        color: #191c19;
+        padding: .625rem 1.25rem;
+        background-color: #e6e2c7;
+        transition-property: color, background-color;
+        transition-duration: 2s;
+    }
+
+    .nav li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav a, .nav a:visited {
+    color: #191c19;
+    }
+
+    .nav a:hover, .nav a:active, .nav a:focus {
+    background-color: #191c19;
+    color: #e6e2c7;
+    }
+
+    .nav a:focus {
+    outline: 1px dotted #191c19;
+    }
+}
+
+/* Main Content */
+p {
+    max-width: 60%;
+    text-align: center;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+/* Projects */
+h2 {
+    color: #191c19;
+    background-color: #e6e2c7;
+    padding: 1rem;
+    margin: 1.5rem;
+}
+
+.projects-wrap, .wordpress {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem;
+}
+
+article {
+    box-shadow: 0px 0px 3px 3px #9d8963;
+    margin: 1rem;
+}
+
+@media (min-width: 43.75rem) {
+    .wordpress h2 {
+        margin: auto;
+    }
+}
+
+/* Footer */
+footer {
+    color: #191c19;
+    background-color: #e6e2c7;
+    padding: 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.contact a:hover, .contact a:active, .contact a:focus, .contact a:focus {
+    outline: 1px dotted #191c19;
+    background: none;
+}
+
+.contact a:hover, .contact a:active, .contact a:focus, .contact a:focus {
+    outline: 1px dotted #191c19;
+    background: none;
+}
