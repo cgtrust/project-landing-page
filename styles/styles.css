@@ -24,8 +24,8 @@ a {
     text-decoration: none;
     display: flex;
     gap: 1.25rem;
-    padding: 1rem;
-    margin: 1rem;
+    /* padding: 1rem;
+    margin: 1rem; */
 }
 
 a, a:visited {
@@ -129,14 +129,30 @@ article {
     margin: 1rem;
 }
 
+.projects {
+    padding-bottom: 3rem;
+}
+
 /* Footer */
-.contact {
+.footer {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
 }
 
-.footer {
-    align-items: center;
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
     margin: 0 auto;
+}
+
+@media (min-width: 40rem) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
 }
