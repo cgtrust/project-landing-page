@@ -3,26 +3,36 @@ body {
     background-color: #191c19;
     text-align: center;
     margin: 0 auto;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: .5em 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header */
 header {
     background-color: #e6e2c7;
-    padding: 1rem;
+    color: #191c19;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 5rem;
 }
 
 h1 {
     color: #e6e2c7;
     font-size: 2.5rem;
-    border-bottom: 2px solid rgb(46, 64, 221);
+    border-bottom: 2px solid #9d8963;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: .5em 0;
-}
-
+/* Links */
 a {
     text-decoration: none;
     display: flex;
@@ -49,9 +59,31 @@ li {
     margin-left: 0rem;
 }
 
-/* Sidebar Navigation Menu */
+/* For large screens */
+.site-wrap {
+    max-width: 120rem;
+    margin: 0 auto;
+}
 
+/* Menu button for mobile */
+.menu-toggle {
+    background: none;
+    padding: 0rem 1;
+    border: 1px solid #191c19;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: none;
+}
+
+/* Sidebar Navigation Menu */
 @media (min-width: 43.75em) {
+    .menu-toggle {
+        display: none;
+    }
+
     .nav {
     display: flex;
     align-items: flex-start;
@@ -81,4 +113,26 @@ p {
     text-align: center;
     padding: 2rem;
     margin: 0 auto;
+}
+
+/* Footer */
+/* Need to fix the contact icons */
+footer {
+    color: #191c19;
+    background-color: #e6e2c7;
+    padding: 0;
+}
+
+.contact {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.contact a:hover, .contact a:active, .contact a:focus, .contact a:focus {
+    outline: 1px dotted #191c19;
+    background: none;
 }
