@@ -6,6 +6,7 @@
     <title>Catharina Trust</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
 
@@ -14,8 +15,15 @@
 <!-- Header -->
         <header id="top">
             <div class="site-nav">
-                <h1><img src="images/logo.png" alt="Logo of initials CGT written in a musical style on a music staff."></h1>
-                <nav class="nav">
+                <h1><img src="images/logo.png" alt="Logo of initials CGT on rotating vinyls, sitting on a keyboard."></h1>
+                <nav class="nav" id="nav">
+                    <button class="menu-toggle">
+                        <!-- Will add Javascript for toggle menu when I learn more -->
+                        <img src="images/bars-solid.svg" alt="Menu">
+                        <title>Menu Icon</title>
+                        <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
+                    </button>
+
                     <ul class="group">
                         <li><a href="about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
