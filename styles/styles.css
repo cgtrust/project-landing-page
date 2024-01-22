@@ -10,9 +10,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: .5em 0;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1.75rem;
 }
 
 .site-wrap {
@@ -34,6 +32,8 @@ a, a:visited {
 a:hover, a:active, a:focus {
     color: #191c19;
     background-color: #e6e2c7;
+    transition-property: color, background-color;
+    transition-duration: 2s;
 }
 
 a:focus {
@@ -51,7 +51,6 @@ header, footer {
 }
 
 header {
-    padding: .5rem;
     position: fixed;
     left: 0;
     right: 0;
@@ -62,63 +61,42 @@ header {
     scroll-behavior: smooth;
 }
 
-.banner img {
+header li {
+    color: #e6e2c7;
+    background-color: #191c19;
+    padding: .375rem;
+}
+
+h1 img {
     max-width: 6.25rem;
-    margin-top: 1rem;
+    margin-left: 1rem;
+    transform: translateY(30%);
 }
 
-/* Mobile */
-.nav, .group {
-    display: none;
-}
-
-.mobile-ui {
+.site-nav {
     display: flex;
+    align-items: end;
     justify-content: space-between;
 }
 
-.menu-toggle {
-    margin: 1rem;
+.group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-right: 2rem;
+    transform: translateY(25%);
 }
 
+/* Full Screen Style */
 @media (min-width: 40rem) {
-    .menu-toggle {
-        display: none;
-    }
-
-    .logo {
-        position: absolute;
-    }
-
-    .nav {
-        display: flex;
-        float: right;
-        margin-top: 1rem;
-    }
-
-    .group {
-        display: flex;
-        margin: 0;
-    }
-
-    .group li {
-        display: block;
-        font-size: 1.25rem;
-        color: #e6e2c7;
-        background-color: #191c19;
-        margin-right: 2rem;
+    h1 img {
+        max-width: 100%;
+        margin-left: 2rem;
     }
 }
 
 /* Main Content */
-h1 {
-    font-size: 2.5rem;
-    border-bottom: 2px solid #9d8963;
-    max-width: 60%;
-    padding: 5rem 0rem;
-    margin: 2rem auto;
-}
-
 p {
     max-width: 60%;
     text-align: center;
@@ -128,10 +106,13 @@ p {
 
 /* Portfolio */
 h2 {
-    color: #191c19;
-    background-color: #e6e2c7;
-    padding: 1rem;
-    margin: 1.5rem;
+    font-size: 2.5rem;
+    background-color: #191c19;
+    color: #e6e2c7;
+    padding: 5rem 0rem;
+    margin: 2rem auto;
+    border-bottom: 2px solid #9d8963;
+    max-width: 60%;
 }
 
 .projects-wrap {
@@ -146,6 +127,7 @@ h2 {
 .projects-wrap a {
     margin: 0 auto;
     justify-content: center;
+    max-width: 60%;
 }
 
 article {
@@ -174,7 +156,7 @@ header a:focus, footer a:focus {
     border: 1px dotted #191c19;
 }
 
-.contact {
+footer ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
