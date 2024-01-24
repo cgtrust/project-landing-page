@@ -116,6 +116,10 @@ button {
         position: revert;
     }
 
+    .nav {
+        position: revert;
+    }
+
     h1 img {
         max-width: 100%;
         margin-left: 2rem;
