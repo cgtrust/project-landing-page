@@ -111,6 +111,11 @@ button {
         display: none;
     }
 
+    #header-menu {
+        display: flex;
+        position: revert;
+    }
+
     h1 img {
         max-width: 100%;
         margin-left: 2rem;
@@ -124,11 +129,6 @@ button {
         margin-right: 2rem;
         transform: translateY(29%);
         z-index: -1000;
-    }
-
-    #header-menu {
-        display: flex;
-        position: revert;
     }
 }
 
