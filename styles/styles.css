@@ -97,7 +97,6 @@ button {
 #header-menu {
     display: none;
     position: absolute;
-    bottom: 106;
     right: 0;
     z-index: 1000;
 }
@@ -124,6 +123,12 @@ button {
         gap: 1rem;
         margin-right: 2rem;
         transform: translateY(29%);
+        z-index: -1000;
+    }
+
+    #header-menu {
+        display: flex;
+        position: revert;
     }
 }
 
