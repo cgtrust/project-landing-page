@@ -90,6 +90,22 @@ button {
     margin: 2rem;
 }
 
+.nav {
+    position: relative;
+}
+
+#header-menu {
+    display: none;
+    position: absolute;
+    bottom: 106;
+    right: 0;
+    z-index: 1000;
+}
+
+#header-menu.toggled {
+    display: block;
+}
+
 /* Full Screen Style */
 @media (min-width: 40rem) {
     button {
