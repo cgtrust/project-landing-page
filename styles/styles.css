@@ -142,7 +142,7 @@ button {
         z-index: -1000;
     }
 
-    header h1 a:hover, header h1 a:focus {
+    header h1 a:focus {
         background-color: #9d8963;
         border: none;
     }
