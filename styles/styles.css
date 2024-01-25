@@ -69,9 +69,12 @@ header li {
 }
 
 h1 img {
-    max-width: 6.25rem;
+    max-width: 6.5rem;
     margin-left: 1rem;
-    transform: translateY(30%);
+}
+
+h1 a{
+    transform: translateY(20%);
 }
 
 .site-nav {
@@ -92,6 +95,7 @@ button {
 
 .nav {
     position: relative;
+    margin-right: 2rem;
 }
 
 #header-menu {
@@ -137,6 +141,11 @@ button {
         transform: translateY(29%);
         z-index: -1000;
     }
+
+    header h1 a:hover, header h1 a:focus {
+        background-color: #9d8963;
+        border: none;
+    }
 }
 
 /* Main Content */
@@ -152,7 +161,7 @@ h2 {
     font-size: 2.5rem;
     background-color: #191c19;
     color: #e6e2c7;
-    padding-top: 5rem;
+    padding-top: 6rem;
     margin: 2rem auto;
     border-bottom: 2px solid #9d8963;
     max-width: 60%;
