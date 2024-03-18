@@ -1,0 +1,119 @@
+@use 'vars' as*;
+@use 'mixins' as*;
+
+.game {
+    @include flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto;
+    &.isHidden{
+        display: none;
+    }
+}
+
+.game-board {
+    @include grid;
+    img {
+        width: 10rem;
+    }
+}
+
+.game-start {
+    position: relative;
+    text-align: center;
+    width: 15.625rem;
+    .user-name {
+        position: absolute;
+        top: 2.5rem;
+        left: 5rem;
+    }
+    img {
+        height: 12rem;
+        padding-top: 2rem;
+    }
+    p {
+        display: inline-block;
+    }
+    h2 {
+        margin: 0;
+    }
+}
+
+.game-over {
+    @include grid;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.6);
+    h2 {
+        font-size: 10rem;
+        color: #F0CD17;
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    button {
+        color: $heading-color;
+        text-shadow: $shadow;
+        background-color: rgb(0, 0, 0, 0.6);
+        border: 1px solid $heading-color;
+    }
+    &.isHidden{
+        display: none;
+    }
+}
+
+.adventurer-select-container {
+    float: right;
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+    }
+    button {
+        margin: 1rem auto;
+    }
+}
+
+.name-adventurer {
+    width: 45rem;
+    background-color: rgb(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 1rem;
+    margin: 0 auto;
+    &.isHidden{
+        display: none;
+    }
+}
+
+label {
+    padding: .5rem;
+}
+
+.progress {
+    outline: 1px solid #F0CD17;
+    max-width: 6rem;
+    margin: 0 auto;
+}
+
+.progress-bar, .progress-bar.full {
+    background-color: #9acc12ff;
+    width: 100%;
+}
+
+.progress-bar.three-quarters {
+    background-color: linear-gradient(to right, #9acc12ff 75%, red 75%);
+    width: 75%;
+}
+
+.progress-bar.half {
+    background-color: linear-gradient(to right, #9acc12ff 50%, red 50%);
+    width: 50%;
+}
+
+.progress-bar.quarter {
+    background-color: linear-gradient(to right, #9acc12ff 25%, red 25%);
+    width: 25%;
+}
+
+.progress-bar.empty {
+    background-color: transparent;
+    width: 0%;
+}

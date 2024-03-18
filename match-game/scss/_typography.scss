@@ -1,0 +1,27 @@
+@use 'vars' as*;
+body {
+    font-family: $body-font;
+    color: $heading-color;
+    text-shadow: $shadow;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+    margin: 2rem;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    font-family: $body-font;
+}
+
+input {
+    box-shadow: $shadow;
+}

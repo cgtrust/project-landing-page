@@ -1,0 +1,25 @@
+.open-card, .close-card {
+    transition: transform 1s ease;
+    transform-style: preserve-3d;
+}
+
+.open-card {
+    transform: rotateY(180deg);
+}
+
+.close-card {
+    transform: rotateY(0deg);
+}
+
+.card {
+    perspective: 62.5rem;
+    background: none;
+    position: relative;   
+    img:nth-of-type(1){
+        z-index: 5;
+    }
+    img:nth-of-type(2){
+        position: absolute;
+        z-index: 1;
+    }
+}

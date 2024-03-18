@@ -1,0 +1,66 @@
+@use 'vars' as*;
+@use 'mixins' as*;
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    @include bg-img;
+    background-image: url('../images/ff14-background-image.png');
+}
+
+button, .btn-submit {
+    font-size: 1.5rem;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 1rem auto;
+}
+
+.race-select, .btn-submit {
+    color: $heading-color;
+    text-shadow: $shadow;
+    @include flex;
+}
+
+.start-btn {
+    color: #F0CD17;
+    border: 1px solid #F0CD17;
+}
+
+.adventurer-images {
+    @include flex;
+    gap: 2rem;
+    justify-content: center;
+    img {
+        height: 35rem;
+    }
+    img:hover, img:focus {
+        scale: 1.1;
+    }
+    &.isHidden{
+        display: none;
+    }
+    padding-left: 27.2956rem;
+}
+
+.selected-adventurer {  
+    @include flex;
+    justify-content: center;
+}
+
+footer {
+    @include grid;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 7.5rem;
+    width: 100%;
+    overflow: hidden;
+    p {
+        text-align: center;
+    }
+}
